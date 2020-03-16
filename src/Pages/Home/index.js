@@ -120,7 +120,7 @@ export default function Home({ navigation }) {
                 let tablesJson = JSON.parse(res);
                 tablesJson.push({
                     key: Math.random().toString(),
-                    number: tables.length + 1,
+                    number: tables.length + 2,
                     status: "Livre"
                 });
 
@@ -212,6 +212,7 @@ export default function Home({ navigation }) {
                 style={{ margin: 0 }}
                 animationIn="slideInLeft"
                 animationOut="slideOutLeft"
+                coverScreen={true}
                 coverScreen={true}
                 onBackdropPress={() => setShowMenu(false)}
                 isVisible={showMenu}
